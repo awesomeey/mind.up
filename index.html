@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="asset/css/index.css" />
+		<title>Mind:up</title>
+	</head>
+	<body>
+		<div id="background"></div>
+		<form id="userData">
+			<div class="user-box-wrapper">
+				<!--  -->
+			</div>
+		</form>
+		<main>
+			<div class="greeting-wrapper">
+				<h1 class="title">👋 Hello <span>이하나</span>!</h1>
+				<div class="timeline">
+					<div id="calendar"></div>
+					<div id="clock"></div>
+				</div>
+				<div id="weather-api">
+						<span class="locale"></span>
+						<span class="city"></span>
+						<span class="weather"></span>
+						<span class="temp"></span>
+				</div>
+			</div>
+
+			<div class="list-wrapper">
+				<div class="todo-list">
+					<form id="InsertTodo">
+						<input type="text" class="write-todo" placeholder="What's Ur purpose, today? click update button or press Enter" maxlength="60" required/>
+						<button type="submit">update u'r mind</button>
+					</form>
+					<ul class="todo"></ul>
+				</div>
+
+				<div class="quote-list">
+					<p class="typo"></p>
+					<div class="message">
+						<span class="master">mind.up</span>
+						<span class="msg">
+							const js = superSexy();<br>
+							const proudMe = jsTBD();<br>
+							// superSexy by "nico T" 😁
+						</span>
+						<span class="tag"></span>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="asset/js/index.js"></script>
+	<script src="asset/js/clock.js"></script>
+	<script src="asset/js/random.js"></script>
+	<script src="asset/js/todo.js"></script>
+	<script src="asset/js/weather.js"></script>
+</html>

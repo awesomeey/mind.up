@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR:wght@200;300;600&display=swap');
+body{
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+	margin: 0;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.none{display: none;}
+
+#background{
+	width: calc(100% + 7vw);
+	height: 100%;
+	position: fixed;
+	left: -3.5vw;
+	top: 0;
+	z-index: -999;
+	background: left top no-repeat;
+	background-size: cover;
+	animation: moveBackground 8s ease-in-out infinite alternate;
+}
+
+@keyframes moveBackground {
+  from {background-position: left 0 top;}
+  to {
+		background-position: left 3.5vw top;
+		/* filter: blur(2px); */
+		/* -webkit-filter: blur(2px); */
+	}
+}
+
+#background.bg00{background-image: url('../images/bg00.jpeg')}
+#background.bg01{background-image: url('../images/bg01.jpeg')}
+#background.bg02{background-image: url('../images/bg02.jpeg')}
+#background.bg03{background-image: url('../images/bg03.jpeg')}
+#background.bg04{background-image: url('../images/bg04.jpeg')}
+#background.bg05{background-image: url('../images/bg05.jpeg')}
+#background.bg06{background-image: url('../images/bg06.jpeg')}
+#background.bg07{background-image: url('../images/bg07.jpeg')}
+#background.bg08{background-image: url('../images/bg08.jpeg')}
+#background.bg09{background-image: url('../images/bg09.jpeg')}
+#background.bg10{background-image: url('../images/bg10.jpeg')}
+#background.bg11{background-image: url('../images/bg11.jpeg')}
+#background.bg12{background-image: url('../images/bg12.jpeg')}
+#background.bg13{background-image: url('../images/bg13.jpeg')}
+#background.bg14{background-image: url('../images/bg14.jpeg')}
+#background.bg15{background-image: url('../images/bg15.jpeg')}
+#background.bg16{background-image: url('../images/bg16.jpeg')}
+#background.bg17{background-image: url('../images/bg17.jpeg')}
+#background.bg18{background-image: url('../images/bg18.jpeg')}
+#background.bg19{background-image: url('../images/bg19.jpeg')}
+#background.bg20{background-image: url('../images/bg20.jpeg')}
+#background.bg21{background-image: url('../images/bg21.jpeg')}
+#background.bg22{background-image: url('../images/bg22.jpeg')}
+#background.bg23{background-image: url('../images/bg23.jpeg')}
+#background.bg24{background-image: url('../images/bg24.jpeg')}
+#background.bg25{background-image: url('../images/bg25.jpeg')}
+#background.bg26{background-image: url('../images/bg26.jpeg')}
+#background.bg27{background-image: url('../images/bg27.jpeg')}
+#background.bg28{background-image: url('../images/bg28.jpeg')}
+
+main{
+	position: absolute;
+	width: 80%;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	/* transform: translate(-50%, -50%); tablet */
+	box-sizing: border-box;
+	font-family: 'Cairo',  'Noto Sans KR', sans-serif;
+}
+
+.greeting-wrapper{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.dark .greeting-wrapper > *{
+	color: #fff;
+	text-shadow: none;
+}
+
+.greeting-wrapper > *{
+	font-size: 50px;
+	border-radius: 10px;
+}
+
+/* .greeting-wrapper .timeline > div, */
+.greeting-wrapper #weather-api span{
+	display: inline-block;
+	text-decoration: underline;
+	text-shadow: 0px 0px 6px rgb(255 255 255 / 35%);
+}
+
+.title{
+	text-align: center;
+}
+
+.timeline > div{
+	display: inline-block;
+}
+
+.timeline > div + div{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#weather-api{
+	text-align: right;
+	font-size: 33px;
+}
+
+#weather-api .weather img{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+.list-wrapper{
+	/* width: 80%; */
+	margin-top: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: rgb(255, 255, 255, 0.5);
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 32%); 
+	box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 32%);
+}
+
+.list-wrapper > div{
+  display: inline-block;
+	vertical-align: top;
+}
+
+.todo-list{
+	width: calc(70% - 20px);
+}
+
+#InsertTodo{
+	padding-right: 20px;
+}
+
+#InsertTodo > *{
+	height: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px 5px 0 0;
+	border-color: rgb(157 144 144 / 80%);
+	-webkit-box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 12%); 
+	box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 12%);
+	border-width: 0 0 1px 0;
+	font-family: 'Cairo', sans-serif;
+	line-height: 19px;
+}
+
+#InsertTodo input{
+	width: 70%;
+}
+
+#InsertTodo button{
+	width: 29%;
+	border-width: 0;
+}
+
+.todo{
+	padding-left: 0;
+}
+
+.todo li{
+	list-style: none;
+	display: block;
+	position: relative;
+	width: 100%;
+	min-height: 25px;
+	margin: 0;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.todo li > *{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 25px;
+}
+
+.todo li + li{
+	margin-top: 5px;;
+}
+
+.todo li .do{
+	padding: 0 5px 0 10px;
+	font-size: 18px;
+	border-radius: 5px 0 0 5px;
+}
+	
+.todo li .del{
+	background: none;
+	border: 0;
+	padding: 0 5px;
+	font-size: 15px;
+	border-radius: 0 5px 5px 0;
+}
+
+.todo li > *:not(.date){
+	background-color: rgb(255 255 255 / 80%);
+	border: solid rgb(116 116 116 / 50%);
+	border-width: 0 0 1px 0;
+}
+
+.todo li .date{
+	margin-left: 5px;
+	font-size: 12px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.quote-list{
+	width: calc(30% - 20px);
+	background: rgb(255 255 255 / 80%);
+	word-break: keep-all;
+	border-radius: 10px;
+	border:1px solid #c9c9c9;
+}
+
+.quote-list > *{
+	display: block;
+}
+
+.quote-list .typo{
+	padding: 10px;
+	font-size: 35px;
+	font-weight: 700;
+	font-family: 'Noto Serif KR', serif;
+	color: #464040;
+	text-align: center;
+}
+
+.quote-list .message::before{
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: url('../images/master.png') no-repeat;
+	background-size: 100% auto;
+}
+
+.quote-list .message{
+	position: relative;
+	padding: 10px 10px 20px 50px;
+	background-color: rgb(255 255 255 / 80%);
+	vertical-align: middle;
+	border-radius: 0 0 10px 10px;
+	line-height: 20px;
+}
+
+.quote-list .message > span{
+	font-size: 14px;
+	font-family: 'Noto Sans KR', serif;
+	display: inline-block;
+}
+
+.quote-list .message .master{
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.quote-list .message .msg{
+	display: inline;
+}
+
+.quote-list .message .tag{
+	padding-left: 3px;
+	color: #1877F2;
+}
