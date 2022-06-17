@@ -1,0 +1,41 @@
+/* greeting */
+.greeting-wrapper{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.greeting-wrapper > *{
+	font-size: 50px;
+	border-radius: 10px;
+}
+.greeting-wrapper span{
+	display: inline-block;
+}
+
+.greeting-wrapper .timeline > div,
+.greeting-wrapper #weather-api span{
+	text-shadow: 0px 0px 6px rgb(255 255 255 / 50%);
+}
+
+.greeting-wrapper #weather-api span{
+	display: inline-block;
+	text-decoration: underline;
+}
+
+.title{
+	text-align: center;
+}
+
+.timeline > div{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#weather-api{
+	text-align: right;
+	font-size: 33px;
+}
+
+#weather-api .weather img{
+	display: inline-block;
+	vertical-align: middle;
+}

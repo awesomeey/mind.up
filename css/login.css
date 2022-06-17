@@ -1,0 +1,155 @@
+/* login, modal etc */
+.reset{
+	position: fixed;
+	min-width: 50px;
+	height: 30px;
+	right: 10px;
+	top: 10px;
+	background: rgb(255 255 255 / 85%);
+	border: solid 1px #c1c0c0;
+	border-radius: 10px;
+	z-index: 990;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset > button{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: 0;
+}
+
+.reset .tooltip{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(calc(-100% - 10px), 0);
+	min-width: 300%;
+	padding: 5px;
+	display: none;
+	background: rgb(255 255 255 / 70%);
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	line-height: 20px;
+	font-size: 15px;
+}
+
+.reset .tooltip span{
+	display: inline-block;
+}
+
+.tooltip::after, .tooltip::before {
+	left: 100%;
+	top: 15px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip::after {
+	border-color: rgba(241, 241, 241, 0);
+	border-left-color: #f1f1f1;
+	border-width: 5px;
+	margin-top: -5px;
+}
+.tooltip::before {
+	border-color: rgba(221, 221, 221, 0);
+	border-left-color: #DDDDDD;
+	border-width: 6px;
+	margin-top: -6px;
+}
+
+.reset .tooltip .tab-device{
+	display: none;
+	margin-top: 10px;
+}
+
+.reset:hover .tooltip{
+	display: block;
+}
+
+
+.user-box-wrapper{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background: rgb(255 255 255 / 85%);
+	z-index: 991;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-box{
+	display: none;
+	position: relative;
+	padding: 10px 50px;
+	background: rgb(255 255 255 / 100%);
+	border: solid 1px #c1c0c0;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 32%); 
+	box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 32%);
+}
+
+.user-box.login::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	display: block;
+	width: 30%;
+	min-height: 70px;
+	background: url('../images/tape.png') no-repeat;
+	background-size: 100% auto;
+}
+
+.user-box input{
+	width: 100%;
+}
+
+.user-box p span{
+	display: block;
+	line-height: 20px;
+}
+
+.user-box .guest{
+	margin-top: 10px;
+}
+
+.user-box.confirm p{
+	line-height: 20px;
+}
+
+.user-box .warning,
+.user-box strong{
+	color: #b73e3e;
+}
+
+.user-box .buttons{
+	padding-top: 10px;
+}
+
+.user-box .buttons .button-login{
+	width: calc(50% - 5px);
+	padding: 10px;
+	background: #2587c7;
+}
+
+.user-box .buttons .button-login.cancle{
+	border: solid 1px #2587c7;
+	background: none;
+	color: #2587c7;
+}
+
+.user-box .buttons button + button{
+	margin-left: 10px;
+}

@@ -1,3 +1,4 @@
+/* import, common, index layout */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR:wght@200;300;600&display=swap');
 @import url('login.css');
 @import url('background.css');
@@ -22,7 +23,6 @@ main{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -60%);
-	/* transform: translate(-50%, -50%); tablet */
 	box-sizing: border-box;
 }
 

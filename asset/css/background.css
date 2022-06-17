@@ -1,0 +1,50 @@
+#background{
+	width: calc(100% + 7vw);
+	height: 100%;
+	position: fixed;
+	left: -3.5vw;
+	top: 0;
+	z-index: -999;
+	background: left top no-repeat;
+	background-size: cover;
+	animation: moveBackground 8s ease-in-out infinite alternate;
+}
+
+@keyframes moveBackground {
+  from {background-position: left 0 top;}
+  to {
+		background-position: left 3.5vw top;
+		/* filter: blur(2px); */
+		/* -webkit-filter: blur(2px); */
+	}
+}
+
+#background.bg00{background-image: url('../images/bg00.jpeg')}
+#background.bg01{background-image: url('../images/bg01.jpeg')}
+#background.bg02{background-image: url('../images/bg02.jpeg')}
+#background.bg03{background-image: url('../images/bg03.jpeg')}
+#background.bg04{background-image: url('../images/bg04.jpeg')}
+#background.bg05{background-image: url('../images/bg05.jpeg')}
+#background.bg06{background-image: url('../images/bg06.jpeg')}
+#background.bg07{background-image: url('../images/bg07.jpeg')}
+#background.bg08{background-image: url('../images/bg08.jpeg')}
+#background.bg09{background-image: url('../images/bg09.jpeg')}
+#background.bg10{background-image: url('../images/bg10.jpeg')}
+#background.bg11{background-image: url('../images/bg11.jpeg')}
+#background.bg12{background-image: url('../images/bg12.jpeg')}
+#background.bg13{background-image: url('../images/bg13.jpeg')}
+#background.bg14{background-image: url('../images/bg14.jpeg')}
+#background.bg15{background-image: url('../images/bg15.jpeg')}
+#background.bg16{background-image: url('../images/bg16.jpeg')}
+#background.bg17{background-image: url('../images/bg17.jpeg')}
+#background.bg18{background-image: url('../images/bg18.jpeg')}
+#background.bg19{background-image: url('../images/bg19.jpeg')}
+#background.bg20{background-image: url('../images/bg20.jpeg')}
+#background.bg21{background-image: url('../images/bg21.jpeg')}
+#background.bg22{background-image: url('../images/bg22.jpeg')}
+#background.bg23{background-image: url('../images/bg23.jpeg')}
+#background.bg24{background-image: url('../images/bg24.jpeg')}
+#background.bg25{background-image: url('../images/bg25.jpeg')}
+#background.bg26{background-image: url('../images/bg26.jpeg')}
+#background.bg27{background-image: url('../images/bg27.jpeg')}
+#background.bg28{background-image: url('../images/bg28.jpeg')}

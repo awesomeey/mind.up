@@ -4,37 +4,46 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="asset/css/index.css" />
+		<link rel="stylesheet" href="./asset/css/index.css" />
 		<title>Mind:up</title>
 	</head>
 	<body>
-		<div id="background"></div>
-		<form id="userData">
-			<div class="user-box-wrapper">
-				<!--  -->
+		<div class="reset logout">
+			<button class="desktop">&orarr; &commat;</button>
+			<div class="tooltip">
+				<span>Click to create a list with a new name!</span>
+				<span>You will be taken to the login form 😉</span>
+				<button class="button-login tab-device">Restart with new name</button>
 			</div>
-		</form>
+		</div>
+		<div id="background"></div>
 		<main>
 			<div class="greeting-wrapper">
-				<h1 class="title">👋 Hello <span>이하나</span>!</h1>
+				<h1 class="title">👋 Hello! <span>Neighbor</span></h1>
 				<div class="timeline">
 					<div id="calendar"></div>
 					<div id="clock"></div>
 				</div>
 				<div id="weather-api">
+					<span>
 						<span class="locale"></span>
 						<span class="city"></span>
+					</span>
+					<span>
 						<span class="weather"></span>
 						<span class="temp"></span>
+					</span>
 				</div>
 			</div>
 
 			<div class="list-wrapper">
 				<div class="todo-list">
-					<form id="InsertTodo">
-						<input type="text" class="write-todo" placeholder="What's Ur purpose, today? click update button or press Enter" maxlength="60" required/>
-						<button type="submit">update u'r mind</button>
-					</form>
+					<div class="write">
+						<form id="InsertTodo">
+							<input type="text" class="write-todo" placeholder="Write Ur purpose and press enter ;-)" required/>
+						</form>
+						<button class="reset-list">&orarr; Reset list</button>
+					</div>
 					<ul class="todo"></ul>
 				</div>
 
@@ -52,10 +61,34 @@
 				</div>
 			</div>
 		</main>
+
+		<!-- modal -->
+		<div class="user-box-wrapper">
+			<div class="user-box login">
+				<h2>&sung;. Thxxx for coming #Mind:up.</h2>
+				<form id="userName">
+					<input type="text" class="name" placeholder="Write your name, Press enter!" required/>
+				</form>
+				<p>
+					<span>&UnderBar; If you want to experience without a name,</span>
+					<span>please click this button below..😊 </span>
+					<button class="button-login guest">Use Guest Name</button>
+				</p>
+			</div>
+
+			<div class="user-box confirm">
+				<h2><span class="warning">&lsqb; &excl; &rsqb;</span> ..<span class="ask"></span></h2>
+				<p></p>
+				<p class="buttons">
+					<button class="button-login confirm">Confirm</button><button class="button-login cancle">Cancle</button>
+				</p>
+			</div>
+		</div>
+		<!--// modal -->
 	</body>
-	<script src="asset/js/index.js"></script>
-	<script src="asset/js/clock.js"></script>
-	<script src="asset/js/random.js"></script>
-	<script src="asset/js/todo.js"></script>
-	<script src="asset/js/weather.js"></script>
+	<script src="./asset/js/login.js"></script>
+	<script src="./asset/js/clock.js"></script>
+	<script src="./asset/js/random.js"></script>
+	<script src="./asset/js/todo.js"></script>
+	<script src="./asset/js/weather.js"></script>
 </html>

@@ -1,0 +1,185 @@
+/* Todo List */
+.list-wrapper{
+	margin-top: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: rgb(255, 255, 255, 0.5);
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 32%); 
+	box-shadow: 5px 5px 12px 3px rgb(0 0 0 / 32%);
+}
+
+.list-wrapper > div{
+  display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.todo-list{
+	width: 60%;
+	padding-right: 20px;
+}
+
+.todo-list .write > *{
+	display: inline-block;
+}
+
+.write .write-todo,
+.write .reset-list{
+	height: 40px;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 5px 5px 0 0;
+	border-color: rgb(157 144 144 / 80%);
+	-webkit-box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 12%); 
+	box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 12%);
+	border-width: 0 0 1px 0;
+	font-family: 'Cairo', sans-serif;
+	line-height: 29px;
+	vertical-align: top;
+}
+
+.write #InsertTodo{
+	width: calc(100% - 84px);
+}
+
+.write .write-todo{
+	width: 100%;
+}
+
+.write .reset-list{
+	width: 80px;
+	border-width: 0;
+}
+
+.todo{
+	padding-left: 0;
+}
+
+.todo li{
+	list-style: none;
+	display: block;
+	width: 100%;
+	min-height: 25px;
+	margin: 0;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.todo li + li{
+	margin-top: 15px;
+}
+
+.todo li .box-wrapper{
+	position: relative;
+	padding: 0 24px 0 20px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 25px;
+	background-color: rgb(255 255 255 / 80%);
+	border: solid rgb(116 116 116 / 50%);
+	border-width: 0 0 1px 0;
+	border-radius: 5px;
+}
+
+.todo li .box-wrapper::before{
+	content: '#';
+	position: absolute;
+	top: 0;
+	left: 9px;
+	display: block;
+	min-width: 10px;
+	min-height: 25px;
+	line-height: 25px;
+	font-family: 'Noto Sans KR', serif;
+	font-size: 14px;
+}
+
+.todo li .do{
+	width: 100%;
+	font-size: 18px;
+	word-break: break-word;
+}
+	
+.todo li .del{
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	background: none;
+	border: 0;
+	padding: 0 5px;
+	font-size: 15px;
+	color: #b73e3e;
+}
+
+.todo li .date{
+	margin-left: 5px;
+	font-size: 12px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.quote-list{
+	width: 39%;
+	background: rgb(255 255 255 / 80%);
+	word-break: keep-all;
+	border-radius: 10px;
+	border:1px solid #c9c9c9;
+}
+
+.quote-list > *{
+	display: block;
+}
+
+.quote-list .typo{
+	padding: 0 20px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1.95rem;
+	font-weight: 700;
+	font-family: 'Noto Serif KR', serif;
+	color: #464040;
+	text-align: center;
+}
+
+.quote-list .message::before{
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: url('../images/master.png') no-repeat;
+	background-size: 100% auto;
+}
+
+.quote-list .message{
+	position: relative;
+	padding: 10px 10px 20px 50px;
+	background-color: rgb(255 255 255 / 80%);
+	vertical-align: middle;
+	border-radius: 0 0 10px 10px;
+	line-height: 20px;
+}
+
+.quote-list .message > span{
+	font-size: 14px;
+	font-family: 'Noto Sans KR', serif;
+	display: inline-block;
+}
+
+.quote-list .message .master{
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.quote-list .message .msg{
+	display: inline;
+}
+
+.quote-list .message .tag{
+	padding-left: 3px;
+	color: #1877F2;
+}
